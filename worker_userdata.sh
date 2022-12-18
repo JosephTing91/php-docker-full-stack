@@ -20,16 +20,18 @@ id ansadmin
 newgrp docker
 
 #docker compose
-sudo yum install python3-pip
+
+sudo su ansadmin
+yum install python3-pip
 # 2. Then run any one of the following
-sudo pip3 install docker-compose # with root access update this to change to ansadmin user...
+pip3 install docker-compose # with root access update this to change to ansadmin user...
 
 #enable docker service at boot
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 
 #important note!!! append the following path to PATH env variable /usr/local/bin
-
+PATH=$PATH:/usr/local/bin
 # node-exporter installations
 sudo useradd --no-create-home node_exporter
 

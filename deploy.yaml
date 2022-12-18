@@ -21,6 +21,7 @@
       become: true
       shell:
         cmd: git clone https://github.com/JosephTing91/php-docker-full-stack.git
+        chdir: /home/ansadmin
     - name: edit env path 
       shell: "export PATH=$PATH:/usr/local/bin"
     - name: start containers
