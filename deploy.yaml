@@ -13,6 +13,9 @@
     #     owner: ansadmin
     #     group: ansadmin
     #     mode: 0777
+    - name: rm git folder and contents
+      shell:
+        cmd: rm -rf /home/ansadmin/php-docker-full-stack
     - name: git clone
       become: true
       shell:
