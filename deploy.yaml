@@ -26,7 +26,7 @@
     - name: start containers
       shell:
         cmd: docker-compose up
-
+        chdir: /home/ansadmin/php-docker-full-stack
 
 #try to use execute commands over ssh instead...
 
