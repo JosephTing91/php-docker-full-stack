@@ -1,7 +1,7 @@
 - name: Ansible Copy Local to Remote
   hosts: "{{hosts}}"
   vars:
-    src_path: "/var/lib/jenkins/workspace/k8s-pipeline/"
+    src_path: "/var/lib/jenkins/workspace/new-app-pipeline/"
     dest_path: "/home/ansadmin"
     config_file_dest_path: "/home"
   tasks:
