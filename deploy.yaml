@@ -23,13 +23,10 @@
     - name: start containers
       shell:
         cmd: docker-compose up
-        chdir: /home/ansadmin/php-docker-full-stack
-
 #try to use execute commands over ssh instead...
 #  add this command to edit path variable... export PATH=$PATH:/usr/local/bin
-
-
     # - name: pull docker image
     #   become: true
     #   shell:
     #     "docker pull joeting91/nuvalence"
+    
